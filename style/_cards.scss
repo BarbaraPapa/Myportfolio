@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.card-1-container {
+  @extend %card-style;
+
+  .fa-html5 {
+    @include icon($color-html, 13rem);
+  }
+  .fa-css3-alt {
+    @include icon($color-css, 8rem);
+  }
+}
+
+.card-2-container {
+  @extend %card-style;
+
+  .fa-sass {
+    @include icon($color-sass, 13rem);
+  }
+  .fa-react {
+    @include icon($color-react, 8rem);
+  }
+}
+
+.card-3-container {
+  @extend %card-style;
+
+  .fa-sass {
+    @include icon($color-sass, 16rem);
+  }
+  .fa-react {
+    @include icon($color-react, 11rem);
+  }
+  .fa-node-js {
+    @include icon($color-node-js, 6rem);
+  }
+}
+
+.card-4-container {
+  @extend %card-style;
+
+  .fa-sass {
+    @include icon($color-sass, 13rem);
+  }
+  .fa-square-js {
+    @include icon($color-js, 8rem);
+  }
+}
+
+// media query -----
+
+// tablet
+@media (min-width: 768px) {
+  .container {
+    margin: 10rem 0;
+  }
+}
